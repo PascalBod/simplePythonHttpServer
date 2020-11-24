@@ -10,7 +10,7 @@ For one of the projects I'm working on, I need to send a binary file from a devi
 are not available on device side, but curl is there. Using it to send a binary file is as simple as
 
 ```
-curl --request POST --data-binary "<filePath>" <remoteAddress>:<remotePort>
+curl --request POST --data-binary "@<filePath>" <remoteAddress>:<remotePort>
 ```
 
 On the computer, I need a (simple) HTTP server, to answer the POST request, and to save the received file.
